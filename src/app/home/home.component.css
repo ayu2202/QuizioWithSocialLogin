@@ -1,0 +1,283 @@
+*{
+    margin-top: 6px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: discover;
+    src: url('../../assets/Fonts/acid_medium.otf');
+}
+
+@font-face {
+    font-family: logo;
+    src: url('../../assets/Fonts/font-logo.ttf');
+}
+
+@font-face {
+    font-family: tag;
+    src: url('../../assets/Fonts/tagline.otf');
+}
+
+@font-face {
+    font-family: downtext;
+    src: url('../../assets/Fonts/Quicksand-Regular.otf');
+}
+
+.top {
+    height: 730px;
+    width: 100%;
+    background-image: url('../../assets/images/bg.jpg');
+}
+
+.top-heading {
+    font-family: "tag";
+    color: white;
+    padding-top: 40%;
+    font-size: 46px;
+}
+
+.flex-container1 {
+    display: flex;
+    flex-wrap: nowrap;
+    background-image: url('../../assets/images/bg.jpg');
+}
+
+.div-logo {
+    height: 730px;
+    width: 30%;
+}
+
+.div-content {
+    height: 730px;
+    width: 50%;
+}
+
+.div-login {
+    height: 730px;
+    width: 20%;
+}
+
+.logo {
+    font-family: 'logo';
+    font-size: 50px;
+    color: azure;
+}
+
+.div-head {
+    padding-left: 25px;
+    padding-top: 20px;
+    height: 100px;
+    width: 200px;
+}
+
+.btn-login {
+    color: white;
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 40px;
+    height: 50px;
+    width: 100px;
+    border: 1px solid white;
+    background: transparent;
+    border-radius: 10px;
+}
+
+.btn-signup {
+    margin-left: 5%;
+    color: white;
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 40px;
+    height: 50px;
+    width: 100px;
+    border: 1px solid white;
+    background: transparent;
+    border-radius: 10px;
+}
+
+.btn-login:hover {
+    border: 1px solid red;
+    color: red;
+    transition: all 300ms linear;
+}
+
+.btn-signup:hover {
+    border: 1px solid red;
+    color: red;
+    transition: all 300ms linear;
+}
+
+.a-login {
+    text-decoration: none;
+    color: white; 
+}
+
+.a-login:hover {
+    text-decoration: none;
+    color: red;
+    transition: all 300ms linear;
+}
+
+.a-signup:hover {
+    text-decoration: none;
+    color: red;
+    transition: all 300ms linear;
+}
+
+.a-signup {
+    text-decoration: none; 
+    color: white;
+}
+
+.btn-knowmore {
+    margin-top: 3%;
+    margin-left: 40%;
+    height: 7%;
+    width: 22%;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 25px;
+}
+
+.btn-knowmore:hover {
+    background-color: gray;
+    transition: all 400ms linear;
+}
+
+.a-knowmore {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-family: 'discover';
+}
+
+.a-knowmore:hover {
+    text-decoration: none;
+    color: white;
+    transition: all 100ms linear;
+}
+
+.downarrow {
+    position: relative;
+    top: 30%;
+    padding-top: 60px;
+}
+
+.flex-container2 {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin: 8%;
+}
+
+.fc2-text {
+    margin-right: 10%;
+    font-family: 'downtext';
+    font-size: 17px;
+}
+
+.btn-fc2 {
+    margin-left: 20%;
+    height: 40px;
+    width: 250px;
+    border: none;
+    background-color: lightblue;
+    border-radius: 20px;
+    opacity: 0.6;
+}
+
+.btn-fc2:hover {
+    opacity: 1;
+    background-color: #0CD4CD;
+    transition: all 400ms linear;
+}
+
+.fc2-image {
+    margin-left: 10%;
+}
+
+.flex-container3 {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin: 8%;
+}
+
+.fc3-text {
+    margin-left: 10%;
+    font-family: 'downtext';
+    font-size: 17px;
+}
+
+.btn-fc3 {
+    margin-right: 20%;
+    height: 40px;
+    width: 250px;
+    border: none;
+    background-color: lightblue;
+    border-radius: 20px;
+    opacity: 0.6;
+}
+
+.btn-fc3:hover {
+    opacity: 1;
+    background-color: #0CD4CD;
+    transition: all 400ms linear;
+}
+
+.fc3-image {
+    margin-right: 10%;
+}
+
+.flex-container4 {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin: 8%;
+}
+
+.fc4-text {
+    margin-right: 10%;
+    font-family: 'downtext';
+    font-size: 17px;
+}
+
+.btn-fc4 {
+    margin-left: 20%;
+    height: 40px;
+    width: 250px;
+    border: none;
+    background-color: lightblue;
+    border-radius: 20px;
+    opacity: 0.6;
+}
+
+.btn-fc4:hover {
+    opacity: 1;
+    background-color: #0CD4CD;
+    transition: all 400ms linear;
+}
+
+.fc4-image {
+    margin-left: 10%;
+}
+
+#top-link {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 50%;
+    height: 20px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.icon-top {
+    text-decoration: none;
+    background: transparent;
+}

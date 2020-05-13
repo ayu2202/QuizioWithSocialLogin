@@ -1,0 +1,31 @@
+<div class="jumbotron" style="margin-top: 4%;">
+    <h5 class="display-4">Q. No. {{ firstques.qno }}</h5><br><br>
+    <p class="lead">{{ firstques.question }}</p><hr class="my-4">
+    <form id="quesfrm" #quesoptions = "ngForm">
+        <input name="optn" type="radio" value="a" [(ngModel)] = "stu_option.optn" />&nbsp;{{firstques.a}}<br><br>
+        <input name="optn" type="radio" value="b" [(ngModel)] = "stu_option.optn" />&nbsp;{{firstques.b}}<br><br>
+        <input name="optn" type="radio" value="c" [(ngModel)] = "stu_option.optn" />&nbsp;{{firstques.c}}<br><br>
+        <input name="optn" type="radio" value="d" [(ngModel)] = "stu_option.optn" />&nbsp;{{firstques.d}}<br><br>
+    </form>
+    
+    <p class="lead">
+        <a class="btn btn-primary btn-lg" (click)='prev(firstques.qno)' role="button">&#xab; Previous</a> &nbsp;&nbsp;&nbsp;&nbsp;
+      <a class="btn btn-primary btn-lg" (click)='next(firstques.qno)' role="button">Next &#xbb;</a>
+      <!-- we will be sending the question number in the next function -->
+    </p>
+  </div>
+
+
+    <!-- <p>{{ questions_obj.category }}</p>
+     <div *ngFor = "let p of questions_obj.Questions">
+        <p>{{ p.question }}</p>
+        <p>{{ p.a }}</p>
+        <p>{{ p.b }}</p>
+        <p>{{ p.c }}</p>
+        <p>{{ p.d }}</p>
+        <p>{{ p.correct }}</p>
+    </div>
+    <div>
+        <p>{{ questions_obj.Questions[2]|json }}</p>
+    </div> -->
+    

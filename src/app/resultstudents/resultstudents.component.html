@@ -1,0 +1,20 @@
+<div class="container" style="align-content: center; margin-top: 4%; margin-left:19%;">
+<table class="table table-striped">
+   <thead>
+      <tr>
+        <th scope="col">date</th>
+        <th scope="col">score</th>
+        <th scope="col">percentage</th>
+        <th scope="col">result</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor = 'let p of spstd'>
+        <th scope="row">{{p.date}}</th>
+        <td>{{p.score}}</td>
+        <td>{{p.percentage}}</td>
+        <td>{{p.result}}</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>

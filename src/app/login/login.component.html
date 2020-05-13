@@ -1,0 +1,79 @@
+<!-- <div style="position:relative; top: 0px; height:768px; width: 100%; background-image:url('../../assets/images/bg.jpg'); background-size: cover;">
+  <div id="login-form">
+          <form action="dashboard.html" method="POST" #loginform = "ngForm">
+          <label class="lblemail">E-mail Address</label><br class="break">
+          <input type="email" id="email" placeholder="Email" name="email" [(ngModel)] = "login_info.email" required /><br class="break">
+      
+          <label class="lblpassword">Password</label><br>
+          <input type="password" id="pw" placeholder="Password" name="password" [(ngModel)] = "login_info.password" required /><br>
+
+          <input type="checkbox" class="password-remember" id="remember"/><p class="remembertext">Remember Me</p>
+          <a href="reset.html" class="forgot">Forgot Password?</a>
+
+          <div class="login">
+              <button type="submit" class="btnlogin" id="btn-login" (click) = "dashboard_page()">Login</button>
+          </div>
+
+          <p class="newac">Don't Have Acoount? <a routerLink = 'signup'>Signup</a></p>
+
+      </form>
+  </div>
+</div> -->
+ 
+
+
+
+<div class="container-fluid bg">
+  <div class="row ">
+      <div class="col-md-4 col-sm-4 col-xs-12"></div>
+      <div class="col-md-4 col-sm-4 col-xs-12">
+          <!--form start-->
+
+          <form class="form" action="dashboard.html" method="POST" #loginform = "ngForm">
+              <h1>Log IN</h1>
+              <div class="form-group">
+          
+            <input class="form-control" type="email" placeholder="Email" name="email" [(ngModel)] = "login_info.email" required >
+                </div>
+              
+
+                <div class="form-group">
+           
+            <input class="form-control" type="password" placeholder="Password" name="password" [(ngModel)] = "login_info.password" required />
+                  </div>
+
+                  
+                  <div class="form-group">
+            <input type="checkbox" class="custom-control-input"/><p class="remembertext">Remember Me</p>
+           
+            </div>
+
+            
+            <a href="reset.html" class="alert-link">Forgot Password?</a><br>
+
+            <br>
+            <button type="button" class="btn btn-outline-success btn-sm btn-block" (click) = "dashboard_page()">LogIn</button>
+            <br>
+
+           
+           
+                <p class="newac">Don't Have Acoount? <a  class="alert-link" routerLink = 'signup'>Signup</a></p>
+                <p class="login-using-google">Or</p>
+                <!-- <button type="submit" class="google-btn btn btn-sm btn-block" (click) = "googlelogin()"><img src="../../assets/images/icon/googleicon.png" height="30px" width="70px" />Login with Google</button>
+                <button type="submit" class="google-btn btn btn-sm btn-block" (click) = "facebooklogin()"><img src="../../assets/images/icon/googleicon.png" height="30px" width="70px" />Login with Facebook</button> -->
+                <div class="btn-group btn-group-wrap" style="text-align: center; display: block;">
+                  <button class="btn btn-secondary mr-1 mt-2" style="background-color: #C63D2D; border: #C63D2D;" (click)='googlelogin()'><i class="fa fa-google"></i> Login using Google</button>
+                  <button class="btn btn-secondary mr-1 mt-2" style="background-color: #385998; border: #385998;" (click)='facebooklogin()'><i class="fa fa-facebook"></i> Login using Facebook</button>
+                </div>
+               
+            
+            
+  
+        </form>
+
+      </div>
+
+
+      <div class="col-md-4 col-sm-4 col-xs-12"></div>
+  </div>
+</div>

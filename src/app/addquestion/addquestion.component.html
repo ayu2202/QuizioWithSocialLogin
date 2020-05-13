@@ -1,0 +1,57 @@
+<div class="container-fluid bg">
+    <div class="row ">
+        <div class="col-md-4 col-sm-4 col-xs-12"></div>
+        <div class="col-md-4 col-sm-4 col-xs-12">
+            <!--form start-->
+            <form class="form" #formaddquestion = "ngForm">
+                <h1>ADD Question</h1>
+                <div class="form-group">
+                    <label for="selectcrs">Select Course</label>
+                    <select class="form-control" id="selectcrs" name="courseselected" [(ngModel)] = "addques_ob.courseselected">
+                      <option *ngFor = "let p of course_ob"> {{ p.coursename }} </option>
+                    </select> 
+                  </div>
+                  <div class="form-group">
+                    <label for="quesnum">Question Number</label>
+                    <input type="number" class="form-control" id="ques" name="qno" [(ngModel)] = "addques_ob.qno">
+                  </div>
+
+                  <div class="form-group">
+<label for="ques">Question</label>
+<textarea class="form-control" id="ques" rows="2" name="question" [(ngModel)] = "addques_ob.question"></textarea>
+</div>
+              
+
+                    <div class="form-group">
+                        <label for="opt1">Option A</label>
+                        <input type="text" class="form-control" id="opt1" placeholder="option A" name="a" [(ngModel)] = "addques_ob.a">
+                      </div>
+
+                          <div class="form-group">
+                              <label for="opt4">Option B</label>
+                              <input type="text" class="form-control" id="opt4" placeholder="Option B" name="b" [(ngModel)] = "addques_ob.b">
+                            </div>
+                            <div class="form-group">
+                              <label for="opt4">Option C</label>
+                              <input type="text" class="form-control" id="opt4" placeholder="Option C" name="c" [(ngModel)] = "addques_ob.c">
+                            </div>
+                            <div class="form-group">
+                              <label for="opt4">Option D</label>
+                              <input type="text" class="form-control" id="opt4" placeholder="Option D" name="d" [(ngModel)] = "addques_ob.d">
+                            </div>
+                              <br>
+
+                              <div class="form-group">
+                                  <label for="cropt">Correct Option</label>
+                                  <input type="text" class="form-control" style="border-color: green;" id="cropt" placeholder="correct answer" name="correct" [(ngModel)] = "addques_ob.correct">
+                                </div>
+
+                    <button type="submit" class="btn btn-success" (click) = "add_question()">+ ADD</button>
+                    
+                    <button type="button" class="btn btn-danger" style="margin-left:10px;" ng-click="reset_input()"> Clear</button>
+                  </form>
+            <!--form end-->
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12"></div>
+    </div>
+</div>

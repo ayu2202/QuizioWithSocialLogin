@@ -1,0 +1,47 @@
+<div class="div-outer">
+<div class="div-form">
+  <form action="" method="POST" style="border: 1px solid black; border-radius: 20px;" #newstudent = "ngForm">
+      <div style="height: auto; width: 40%; text-align: center; margin-left: 30%;"><h2>Signup Here</h2></div>
+      
+      <label>First Name: </label><br>
+      <input type="text" placeholder="First name" class="inp" name="fname" [(ngModel)] = "stu.fname" required/><br><br>
+
+      <label>Last Name: </label><br>
+      <input type="text" placeholder="Last name (optional)" class="inp" name="lname" [(ngModel)] = "stu.lname" /><br><br>
+
+      <label>Role: </label><br>
+      <select class="role" name="role" [(ngModel)] = "stu.role" required>
+        <option value="admin">Admin</option> 
+        <option value="student">Student</option>
+      </select><br><br>
+
+      <label>Mobile Number: </label><br>
+      <select class="sel" name="code" [(ngModel)] = "stu.code" required>
+          <option value="91">+91</option>
+          <option value="45">+45</option>
+          <option value="31">+31</option>
+          <option value="25">+25</option>
+      </select>
+
+      <input type="number" placeholder="Enter your number" class="num" name="mobile" [(ngModel)] = "stu.mobile" required /><br><br>
+
+      <label>Date of Birth: </label><br>
+      <input type="date" placeholder="DOB" class="inp" name="dob" [(ngModel)] = "stu.dob" required /><br><br>
+
+      <label>Email: </label><br>
+      <input type="email" placeholder="enter your email" class="inp" name="email" [(ngModel)] = "stu.email" required /><br><br>
+
+      <label>Password: </label><br>
+      <input type="password" placeholder="Enter your password" class="inp" name="pw" [(ngModel)] = "stu.pw" required /><br><br>
+
+      <label>Confirm password: </label><br>
+      <input type="text" placeholder="Enter your password again" class="inp" name="cpw" [(ngModel)] = "stu.cpw" required><br><br>
+
+      <input type="radio" class="radio" name="gender" value="male" [(ngModel)] = "stu.gender" ><p>Male</p>
+      <input type="radio" class="radio" name="gender" value="female" [(ngModel)] = "stu.gender"><p>Female</p> <br><br>
+
+      <button type="Submit" class="btn" (click) = "register()"><span class="done">Create a New Account</span></button><br><br>
+      <span style="margin-left: 30%;" class="login">Alredy have an Account? <a routerLink="home">Login</a></span>
+  </form>
+</div>
+</div>

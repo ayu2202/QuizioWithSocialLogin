@@ -1,0 +1,370 @@
+<!-- navbar bootstrap -->
+
+<nav class="navbar navbar-expand-lg bg_nav navbar-dark fixed-top">
+  <a class="navbar-brand" href="#">Hello {{stuinfo_dashboard.lname}} Ji</a>
+
+  &nbsp;
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <!-- <a class="navbar-brand" href="#">Hidden brand</a> -->
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 hov" style="border:1px solid white; border-radius:4px; text-align: center;">
+          <li class="nav-item active ">
+            <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
+          </li>
+    </ul>
+
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <!-- <li class="nav-item">
+            <a class="nav-link btn btn-outline-success" href="#">Login</a>
+          </li>
+          &nbsp; -->
+          <!-- <li class="nav-item">
+            <a class="nav-link btn btn-outline-danger" style="color: white; "href="#" >Sign Out</a>
+          </li> -->
+        </ul>
+
+
+        
+
+    <form class="form-inline my-2 my-lg-0">
+      
+        <a class="nav-link btn btn-outline-danger" style="color: white; "href="#" >Sign Out</a>
+      
+      <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+         
+            <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit" style="color:white; border-color:white;">Search</button> -->
+        </form>
+
+        
+
+
+        <div id="mySidenav" class="sidenav">
+              <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+      
+              <div class="pimg">
+                  <img class="prof" src="../../assets/images/icon/avatar-02.jpg" alt="jhon">
+                  
+                  <h4 style="margin-left: 50px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name</h4>
+                  <hr>
+                  
+              </div>
+              <a href="#">  <i style="font-size:20px" class="fa" >&#xf0e4;&nbsp;&nbsp; Dashboard</i></a>
+              <a href="#"> <i class="fa fa-money" style="font-size:20px">&nbsp;&nbsp;Subscriptions</i></a>
+              <a routerLink="history"><i class="fa fa-history" style="font-size:20px">&nbsp;&nbsp;History</i></a>
+              <a href="#"><i class="fa fa-globe" style="font-size:20px">&nbsp;&nbsp;Global Rank</i></a>
+            </div>
+            &nbsp;
+            &nbsp;
+            <a class="nav-link btn btn-outline-secondary" onclick="openNav()" style="color:white; border-color:white;"><i style="font-size:20px" class="fa">&#xf2be;&nbsp;</i>Profile</a>
+            <!-- <button class="btn btn-outline-light my-2 my-sm-0" onclick="openNav()"><i style="font-size:20px" class="fa">&#xf2be;&nbsp;</i>Search</button> -->
+
+
+                                         
+
+
+            <!-- <span style="font-size:30px;cursor:pointer" onclick="openNav()">&nbsp;&nbsp;&#9776;</span> -->
+            
+      
+
+
+      
+      
+    
+  </div>
+</nav>
+
+
+
+          
+      
+
+
+<router-outlet style="margin-left:25%;" ></router-outlet>
+
+<!-- the jumbotron for some other links and feed back-->
+
+<div style="margin-left:20%;" >
+      <div class="container">
+<div class="col-md-6"></div>
+<div class="col-md-6">
+
+</div>
+      </div>
+    </div>
+
+
+<footer style="margin-left:20%;">
+<p style="text-align: center">copyright &copy; Quizio - 2019</p>
+  </footer>
+
+
+
+
+
+
+
+
+<div class="modal fade database_quiz" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+    <div class="card text-center">
+            <div class="card-header">
+                   Database Quiz
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Rules</h5>
+              <p class="card-text"><ul>
+                <li>Be honest: Test taker statements are to be true and accurate. Two ways
+                     in which some individuals attempt to gain an unfair advantage are lying in 
+                     order to obtain an accommodation, such as being granted extra time to take the test, 
+                     and employing an imposter who takes the test in their behalf.</li>
+
+
+                <li>
+                        Be fair: The test-taking environment is to be the same, as much as it is possible, for all test takers.
+                         An exception to this rule is made for those who require an accommodation, such as reading or answer-responding assistance. 
+                         All test takers have access to a uniform set of test material.
+                         Electronic devices with memories that allow for the smuggling of information useful in taking the test are specifically prohibited.
+                </li>
+
+                <li>
+                        Behave appropriately: The testing event is to remain free from disruptions and distractions. 
+                        This allows test takers the opportunity to perform their best in a fair and equitable manner.
+                         Test takers who create distractions may be subject to discipline. Except for medical reasons, 
+                         test takers may not bring food, liquids or other items into the test administration area.
+                </li>
+              </ul>
+              <a href="#" class="btn btn-success">Start Quiz</a>
+            </div>
+            <div class="card-footer text-muted">
+              Time provided - 2hrs
+            </div>
+          </div>
+</div>
+</div>
+</div>
+
+
+<div class="modal fade js_quiz" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+    <div class="card text-center">
+            <div class="card-header">
+                   Javascript Quiz
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Rules</h5>
+              <p class="card-text"><ul>
+                <li>Be honest: Test taker statements are to be true and accurate. Two ways
+                     in which some individuals attempt to gain an unfair advantage are lying in 
+                     order to obtain an accommodation, such as being granted extra time to take the test, 
+                     and employing an imposter who takes the test in their behalf.</li>
+
+
+                <li>
+                        Be fair: The test-taking environment is to be the same, as much as it is possible, for all test takers.
+                         An exception to this rule is made for those who require an accommodation, such as reading or answer-responding assistance. 
+                         All test takers have access to a uniform set of test material.
+                         Electronic devices with memories that allow for the smuggling of information useful in taking the test are specifically prohibited.
+                </li>
+
+                <li>
+                        Behave appropriately: The testing event is to remain free from disruptions and distractions. 
+                        This allows test takers the opportunity to perform their best in a fair and equitable manner.
+                         Test takers who create distractions may be subject to discipline. Except for medical reasons, 
+                         test takers may not bring food, liquids or other items into the test administration area.
+                </li>
+              </ul>
+              <a href="#" class="btn btn-success">Start Quiz</a>
+            </div>
+            <div class="card-footer text-muted">
+              Time provided - 2hrs
+            </div>
+          </div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+<div class="modal fade ds_quiz" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+    <div class="card text-center">
+            <div class="card-header">
+                   Data-Structures Quiz
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Rules</h5>
+              <p class="card-text"><ul>
+                <li>Be honest: Test taker statements are to be true and accurate. Two ways
+                     in which some individuals attempt to gain an unfair advantage are lying in 
+                     order to obtain an accommodation, such as being granted extra time to take the test, 
+                     and employing an imposter who takes the test in their behalf.</li>
+
+
+                <li>
+                        Be fair: The test-taking environment is to be the same, as much as it is possible, for all test takers.
+                         An exception to this rule is made for those who require an accommodation, such as reading or answer-responding assistance. 
+                         All test takers have access to a uniform set of test material.
+                         Electronic devices with memories that allow for the smuggling of information useful in taking the test are specifically prohibited.
+                </li>
+
+                <li>
+                        Behave appropriately: The testing event is to remain free from disruptions and distractions. 
+                        This allows test takers the opportunity to perform their best in a fair and equitable manner.
+                         Test takers who create distractions may be subject to discipline. Except for medical reasons, 
+                         test takers may not bring food, liquids or other items into the test administration area.
+                </li>
+              </ul>
+              <a href="#" class="btn btn-success">Start Quiz</a>
+            </div>
+            <div class="card-footer text-muted">
+              Time provided - 2hrs
+            </div>
+          </div>
+</div>
+</div>
+</div>
+
+
+
+
+<div class="modal fade lg_quiz" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+    <div class="card text-center">
+            <div class="card-header">
+                   Logical-Reasoning Quiz
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Rules</h5>
+              <p class="card-text"><ul>
+                <li>Be honest: Test taker statements are to be true and accurate. Two ways
+                     in which some individuals attempt to gain an unfair advantage are lying in 
+                     order to obtain an accommodation, such as being granted extra time to take the test, 
+                     and employing an imposter who takes the test in their behalf.</li>
+
+
+                <li>
+                        Be fair: The test-taking environment is to be the same, as much as it is possible, for all test takers.
+                         An exception to this rule is made for those who require an accommodation, such as reading or answer-responding assistance. 
+                         All test takers have access to a uniform set of test material.
+                         Electronic devices with memories that allow for the smuggling of information useful in taking the test are specifically prohibited.
+                </li>
+
+                <li>
+                        Behave appropriately: The testing event is to remain free from disruptions and distractions. 
+                        This allows test takers the opportunity to perform their best in a fair and equitable manner.
+                         Test takers who create distractions may be subject to discipline. Except for medical reasons, 
+                         test takers may not bring food, liquids or other items into the test administration area.
+                </li>
+              </ul>
+              <a href="#" class="btn btn-success">Start Quiz</a>
+            </div>
+            <div class="card-footer text-muted">
+              Time provided - 2hrs
+            </div>
+          </div>
+</div>
+</div>
+</div>
+
+
+
+
+<div class="modal fade an_quiz" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+    <div class="card text-center">
+            <div class="card-header">
+                   Analytical-Reasoning Quiz
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Rules</h5>
+              <p class="card-text"><ul>
+                <li>Be honest: Test taker statements are to be true and accurate. Two ways
+                     in which some individuals attempt to gain an unfair advantage are lying in 
+                     order to obtain an accommodation, such as being granted extra time to take the test, 
+                     and employing an imposter who takes the test in their behalf.</li>
+
+
+                <li>
+                        Be fair: The test-taking environment is to be the same, as much as it is possible, for all test takers.
+                         An exception to this rule is made for those who require an accommodation, such as reading or answer-responding assistance. 
+                         All test takers have access to a uniform set of test material.
+                         Electronic devices with memories that allow for the smuggling of information useful in taking the test are specifically prohibited.
+                </li>
+
+                <li>
+                        Behave appropriately: The testing event is to remain free from disruptions and distractions. 
+                        This allows test takers the opportunity to perform their best in a fair and equitable manner.
+                         Test takers who create distractions may be subject to discipline. Except for medical reasons, 
+                         test takers may not bring food, liquids or other items into the test administration area.
+                </li>
+              </ul>
+              <a href="#" class="btn btn-success">Start Quiz</a>
+            </div>
+            <div class="card-footer text-muted">
+              Time provided - 2hrs
+            </div>
+          </div>
+</div>
+</div>
+</div>
+
+
+
+
+<div class="modal fade quants_quiz" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+    <div class="card text-center">
+            <div class="card-header">
+                   Quants Quiz
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Rules</h5>
+              <p class="card-text"><ul>
+                <li>Be honest: Test taker statements are to be true and accurate. Two ways
+                     in which some individuals attempt to gain an unfair advantage are lying in 
+                     order to obtain an accommodation, such as being granted extra time to take the test, 
+                     and employing an imposter who takes the test in their behalf.</li>
+
+
+                <li>
+                        Be fair: The test-taking environment is to be the same, as much as it is possible, for all test takers.
+                         An exception to this rule is made for those who require an accommodation, such as reading or answer-responding assistance. 
+                         All test takers have access to a uniform set of test material.
+                         Electronic devices with memories that allow for the smuggling of information useful in taking the test are specifically prohibited.
+                </li>
+
+                <li>
+                        Behave appropriately: The testing event is to remain free from disruptions and distractions. 
+                        This allows test takers the opportunity to perform their best in a fair and equitable manner.
+                         Test takers who create distractions may be subject to discipline. Except for medical reasons, 
+                         test takers may not bring food, liquids or other items into the test administration area.
+                </li>
+              </ul>
+              <a href="#" class="btn btn-success">Start Quiz</a>
+            </div>
+            <div class="card-footer text-muted">
+              Time provided - 2hrs
+            </div>
+          </div>
+</div>
+</div>
+</div>
+

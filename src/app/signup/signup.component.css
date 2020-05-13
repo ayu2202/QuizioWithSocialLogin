@@ -1,0 +1,126 @@
+@font-face{
+    font-family: h2;
+    src: url("../../assets/Fonts/heading.otf");
+}
+
+@font-face {
+    font-family: label;
+    src: url("../../assets/Fonts/acid.otf")
+}
+
+@font-face {
+    font-family: normalelements;
+    src: url("../../assets/Fonts/Quicksand-Light.otf");
+}
+.btn {
+    margin-left: 2%;
+    height: 50px;
+    width: 96%;
+    background-color: lightgrey; 
+    border-radius: 20px;
+}
+
+.btn:hover{
+    background-color: #707B7C;
+    color: white;
+    cursor: pointer;
+}
+
+.div-outer {
+    height: 1100px;
+    background-image: url('../../assets/images/bg.jpg');
+}
+
+.div-form {
+    margin-left: 31%;
+    height: auto;
+    width: 550px;
+    background-color: white;
+    border-radius: 30px;
+}
+
+
+label {
+    padding-left: 10px;
+    margin-bottom: 10px;
+    font-family: "label";
+    margin-left: 40px;
+    font-size: 20px;
+}
+
+.inp {
+    height: 30px;
+    width: 200px;
+    border-radius: 10px;
+    margin-left: 50px;
+    font-family: 'label';
+    padding-left: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    border: 1px solid lightgray;
+}
+
+.inp:hover {
+    border-radius: 10px;
+}
+
+.role {
+    border-radius: 10px;
+    margin-left: 50px;
+    height: 30px;
+    width: 200px;
+    font-family: 'label';
+    border: 1px solid lightgray;
+}
+
+.sel {
+    border-radius: 8px;
+    margin-left: 50px;
+    height: 30px;
+    width: 50px;
+    font-family: 'label';
+    border: 1px solid lightgray;
+}
+
+.num {
+    margin-top: 10px;
+    margin-left: 5px;
+    padding-left: 10px;
+    font-family: 'label';
+    font-size: 16px;
+    border-radius: 10px;
+    height: 30px;
+    width: 200px;
+    border: 1px solid lightgray;
+}
+
+
+p {
+    display: inline-block;
+    font-family: 'label';
+    font-size: 20px;
+}
+
+h2 {
+    padding-top: 20px;
+    font-family: 'h2';
+    font-size: 40px;
+    color: black;
+}
+
+.radio {
+    margin-left: 50px;
+    font-size: 25px;
+}
+
+.create {
+    font-size: 16px;
+    font-family: 'normalelements';
+    font-weight: bolder; 
+}
+
+.login {
+    font-size: 16px;
+    font-family: 'normalelements';
+    /*font-weight: bold;*/
+}
