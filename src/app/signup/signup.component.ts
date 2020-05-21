@@ -36,7 +36,7 @@ export class SignupComponent implements OnInit {
         this.router.navigate(['dashboard'], {queryParams: { stuinfo_signup: JSON.stringify(this.stu) }});  
       }
 
-      else if((data.status == "ok") && (this.stu.role == "admin"))
+      else if((data.status == "ok") && (this.stu.role == "admin")) 
       {
         console.log("Thankyou for your registration. Admin registered successfully !!!");
         this.router.navigate(['dashboardadmin'], { queryParams : { stuinfo_signup: JSON.stringify(this.stu)}});
